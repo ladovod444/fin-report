@@ -1,0 +1,27 @@
+thead {
+  background-color: #2d89b8;
+  color: #fff;
+}
+
+tbody {
+  background-color: #e4f0f5;
+}
+
+th, td {
+  padding: 9px 11px;;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  border: 2px solid black;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}

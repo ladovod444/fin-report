@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript" src="./assets/js/index.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="content">
+        <h1>Данные баланса пользователя</h1>
+
+        <table>
+            <thead>
+            <tr>
+                <th>Месяц</th>
+                <th>Месячный баланс</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            <tr>
+                <td>Март</td>
+                <td>1000</td>
+            </tr>
+            <tr>
+                <td>Апрель</td>
+                <td>-200</td>
+            </tr>
+
+            </tbody>
+        </table>
+
+        <form action="">
+            <label for="users">Select user</label>
+            <select name="users" id="users">
+                {% for user in users %}
+                    <option value="{{ user.id }}">{{ user.name }}</option>
+                {% endfor %}
+            </select>
+        </form>
+    </div>
+</div>
+</body>
+</html>
