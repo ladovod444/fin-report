@@ -25,3 +25,7 @@ th, td {
   flex-direction: column;
   gap: 30px;
 }
+
+select {
+  padding: 5px 10px;
+}

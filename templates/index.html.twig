@@ -15,30 +15,35 @@
     <div class="content">
         <h1>Данные баланса пользователя</h1>
 
-        <table>
+        <table id="balances">
             <thead>
             <tr>
+                <th>Счет ИД</th>
                 <th>Месяц</th>
                 <th>Месячный баланс</th>
             </tr>
             </thead>
             <tbody>
 
-            <tr>
-                <td>Март</td>
-                <td>1000</td>
-            </tr>
-            <tr>
-                <td>Апрель</td>
-                <td>-200</td>
-            </tr>
+            <!-- Some testing data -->
+{#            <tr>#}
+{#                <td>11111</td>#}
+{#                <td>Март</td>#}
+{#                <td>1000</td>#}
+{#            </tr>#}
+{#            <tr>#}
+{#                <td>2222</td>#}
+{#                <td>Апрель</td>#}
+{#                <td>-200</td>#}
+{#            </tr>#}
 
             </tbody>
         </table>
 
         <form action="">
-            <label for="users">Select user</label>
+            <label for="users">Выберите пользователя</label>
             <select name="users" id="users">
+                <option value="_none">-Не выбран-</option>
                 {% for user in users %}
                     <option value="{{ user.id }}">{{ user.name }}</option>
                 {% endfor %}
