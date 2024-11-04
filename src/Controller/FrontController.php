@@ -29,10 +29,6 @@ class FrontController
      * @throws \Twig\Error\LoaderError
      */
     public function index(): string {
-
-        $res_arr = $this->model->getUserMonthBalance(12);
-        //var_dump($res_arr); //die();
-
         // Получаем данные пользователей имеющих транзакции
         $users = $this->model->getUserData();
 
